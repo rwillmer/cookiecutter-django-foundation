@@ -1,4 +1,4 @@
-{% raw %}{% load staticfiles i18n {% endraw %}{% if cookiecutter.use_compressor == "y" %}compress {% endif %}{% raw %}%}
+{% raw %}{% load staticfiles i18n compress %}
 {% endraw %}{% if cookiecutter.js_task_runner == 'Webpack' -%}{% raw %}{% load render_bundle from webpack_loader %}{% endraw %}{%- endif %}{% raw %}<!DOCTYPE html>
 <html lang="en">
   <head>
@@ -19,10 +19,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
 
     <!-- Your stuff: Third-party css libraries go here -->
-    {% endraw %}{% if cookiecutter.use_compressor == "y" %}{% raw %}{% compress css %}{% endraw %}{% endif %}{% raw %}
+    {% compress css %}
     <!-- This file store project specific CSS -->
     <link href="{% static 'css/project.css' %}" rel="stylesheet">
-    {% endraw %}{% if cookiecutter.use_compressor == "y" %}{% raw %}{% endcompress %}{% endraw %}{% endif %}{% raw %}
+    {% endcompress %}
     {% endblock %}
 
   </head>
@@ -107,12 +107,11 @@
       {% render_bundle 'vendor' %}
       {% render_bundle 'common' %}
       {% render_bundle 'main' %}
-{% endraw %}{% else %}{% raw %}
-      <!-- place project specific Javascript in this file -->
-      {% endraw %}{% if cookiecutter.use_compressor == "y" %}{% raw %}{% compress js %}{% endraw %}{% endif %}{% raw %}
-      <script src="{% static 'js/project.js' %}"></script>
-      {% endraw %}{% if cookiecutter.use_compressor == "y" %}{% raw %}{% endcompress %}{% endraw %}{% endif %}{% raw %}
 {% endraw %}{% endif %}{% raw %}
+      <!-- place project specific Javascript in this file -->
+      {% compress js %}
+      <script src="{% static 'js/project.js' %}"></script>
+      {% endcompress %}
     {% endblock javascript %}
   </body>
 </html>

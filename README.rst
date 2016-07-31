@@ -124,7 +124,6 @@ Answer the prompts with your own desired options_. For example::
     use_python2 [n]: n
     use_docker [y]: n
     use_heroku [n]: y
-    use_compressor [n]: y
     Select js_task_runner:
     1 - Gulp
     2 - Grunt

@@ -240,10 +240,13 @@ else:
 
 # django-compressor
 # ------------------------------------------------------------------------------
-{% if cookiecutter.use_compressor == 'y'-%}
 INSTALLED_APPS += ("compressor", )
 STATICFILES_FINDERS += ("compressor.finders.CompressorFinder", )
-{%- endif %}
+
+# django-libsass
+COMPRESS_PRECOMPILERS = (
+    ('text/x-scss', 'django_libsass.SassCompiler'),
+)
 
 # Location of root django.contrib.admin URL, use {% raw %}{% url 'admin:index' %}{% endraw %}
 ADMIN_URL = r'^admin/'

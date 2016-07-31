@@ -54,9 +54,8 @@ redis>=2.10.0
 celery==3.1.23
 {% endif %}
 
-{% if cookiecutter.use_compressor == "y" %}
 django_compressor==2.0
-{% endif %}
+django-libsass==0.7
 
 {% if cookiecutter.js_task_runner == 'Webpack' -%}
 # Webpack
