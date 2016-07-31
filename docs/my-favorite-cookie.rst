@@ -73,7 +73,7 @@ Now you're ready to create your project using Cookiecutter.
 2. Cookiecutter 
 ===============
 
-Django developers may be familiar with the ``startproject`` command, which initializes the directory structure and required files for a bare-bones Django project. While this is fine when you're just learning Django for the first time, it's not great for a real production app. Cookiecutter takes care of a lot of standard tasks for you, including installing software dependencies, setting up testing files, and including and organizing common libraries like Bootstrap and AngularJS. It also generates a software license and a README.
+Django developers may be familiar with the ``startproject`` command, which initializes the directory structure and required files for a bare-bones Django project. While this is fine when you're just learning Django for the first time, it's not great for a real production app. Cookiecutter takes care of a lot of standard tasks for you, including installing software dependencies, setting up testing files, and including and organizing common libraries like Zurb Foundation and AngularJS. It also generates a software license and a README.
 
 Change directories into the folder where you want your project to live, and run ``cookiecutter`` followed by the URL of Cookiecutter's Github repo.
 

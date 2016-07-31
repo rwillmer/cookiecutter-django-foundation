@@ -28,7 +28,7 @@ Features
 
 * For Django 1.9
 * Renders Django projects with 100% starting test coverage
-* Twitter Bootstrap_ v4.0.0 - alpha_
+* Zurb Foundation_ 6 with an option to customize using SASS variables.
 * 12-Factor_ based settings via django-environ_
 * Optimized development and production settings
 * Registration via django-allauth_
@@ -54,8 +54,7 @@ Optional Integrations
 * Integration with Sentry_ for error logging
 * Integration with Opbeat_ for performance monitoring
 
-.. _alpha: http://blog.getbootstrap.com/2015/08/19/bootstrap-4-alpha/
-.. _Bootstrap: https://github.com/twbs/bootstrap
+.. _Foundation: http://foundation.zurb.com/
 .. _django-environ: https://github.com/joke2k/django-environ
 .. _12-Factor: http://12factor.net/
 .. _django-allauth: https://github.com/pennersr/django-allauth
