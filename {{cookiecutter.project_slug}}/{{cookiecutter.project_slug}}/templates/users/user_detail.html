@@ -4,10 +4,9 @@
 {% block title %}User: {{ object.username }}{% endblock %}
 
 {% block content %}
-<div class="container">
 
   <div class="row">
-    <div class="col-sm-12">
+    <div class="small-12 columns">
 
       <h2>{{ object.username }}</h2>
       {% if object.name %}
@@ -20,9 +19,11 @@
 <!-- Action buttons -->
 <div class="row">
 
-  <div class="col-sm-12 ">
-    <a class="btn btn-primary" href="{% url 'users:update' %}">My Info</a>
-    <a class="btn btn-primary" href="{% url 'account_email' %}">E-Mail</a>
+  <div class="small-12 columns">
+    <div class="button-group">
+      <a class="button" href="{% url 'users:update' %}">My Info</a>
+      <a class="button" href="{% url 'account_email' %}">E-Mail</a>
+    </div>
     <!-- Your Stuff: Custom user template urls -->
   </div>
 

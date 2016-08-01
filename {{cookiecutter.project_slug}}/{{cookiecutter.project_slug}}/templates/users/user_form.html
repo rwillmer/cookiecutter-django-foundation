@@ -1,5 +1,5 @@
 {% raw %}{% extends "base.html" %}
-{% load crispy_forms_tags %}
+{% load foundation_formtags %}
 
 {% block title %}{{ user.username }}{% endblock %}
 
@@ -7,11 +7,9 @@
     <h1>{{ user.username }}</h1>
     <form class="form-horizontal" method="post" action="{% url 'users:update' %}">
         {% csrf_token %}
-        {{ form|crispy }}
-        <div class="control-group">
-          <div class="controls">
-            <button type="submit" class="btn">Update</button>
-          </div>
+        {{ form|as_foundation }}
+
+        <button type="submit" class="button">Update</button>
         </div>
     </form>
 {% endblock %}{% endraw %}

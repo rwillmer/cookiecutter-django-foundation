@@ -17,8 +17,8 @@ whitenoise==3.2
 
 
 # Forms
+git+https://github.com/chrisdev/django-foundation-formtags
 django-braces==1.9.0
-django-crispy-forms==1.6.0
 django-floppyforms==1.6.2
 
 # Models
