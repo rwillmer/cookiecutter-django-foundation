@@ -35,17 +35,11 @@ module.exports = function (grunt) {
       gruntfile: {
         files: ['Gruntfile.js']
       },
-      sass: {
-        files: ['<%= paths.sass %>/**/*.{scss,sass}'],
-        tasks: ['sass:dev'],
-        options: {
-          atBegin: true
-        }
-      },
       livereload: {
         files: [
           '<%= paths.js %>/**/*.js',
           '<%= paths.sass %>/**/*.{scss,sass}',
+          '<%= paths.css %>/**/*.css',
           '<%= paths.app %>/**/*.html'
           ],
         options: {
@@ -53,30 +47,6 @@ module.exports = function (grunt) {
           livereload: true,
         },
       },
-    },
-
-    // see: https://github.com/sindresorhus/grunt-sass
-    sass: {
-      dev: {
-          options: {
-              outputStyle: 'nested',
-              sourceMap: false,
-              precision: 10
-          },
-          files: {
-              '<%= paths.css %>/project.css': '<%= paths.sass %>/project.scss'
-          },
-      },
-      dist: {
-          options: {
-              outputStyle: 'compressed',
-              sourceMap: false,
-              precision: 10
-          },
-          files: {
-              '<%= paths.css %>/project.css': '<%= paths.sass %>/project.scss'
-          },
-      }
     },
 
     //see https://github.com/nDmitry/grunt-postcss
