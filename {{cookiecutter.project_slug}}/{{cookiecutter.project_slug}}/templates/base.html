@@ -71,7 +71,7 @@
           {% if messages %}
               {% for message in messages %}
 
-                  <div class="callout primary {% if message.tags %}alert-{{ message.tags }}{% endif %}" data-closable>
+                  <div class="callout {% if message.tags %}{{ message.tags }}{% endif %}" data-closable>
                   <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
                     <span aria-hidden="true">&times;</span>
                   </button>
