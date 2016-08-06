@@ -79,15 +79,18 @@
         </div>
     </div>
 
-    <div class="row">
 {% endraw %}{% if cookiecutter.js_task_runner == 'Webpack' %}{% raw %}
+    <div class="row">
       <div id="main"></div>
+    </div>
 {% endraw %}{% endif %}{% raw %}
-      {% block content %}
-        <p>Use this document as a way to quick start any new project.</p>
-      {% endblock content %}
-
-    </div> <!-- /row -->
+    {% block content %}
+      <div class="row">
+        <div class="medium-12 columns">
+          <p>Use this document as a way to quick start any new project.</p>
+        </div>
+      </div>
+    {% endblock content %}
 
     {% block modal %}{% endblock modal %}
 

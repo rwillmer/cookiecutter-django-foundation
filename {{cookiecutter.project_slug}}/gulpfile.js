@@ -90,6 +90,6 @@ gulp.task('watch', ['default'], function() {
   gulp.watch(paths.sass + '/*.scss').on("change", reload);
   gulp.watch(paths.js + '/*.js', ['scripts']).on("change", reload);
   gulp.watch(paths.images + '/*', ['imgCompression']);
-  gulp.watch(paths.templates + '/*.html').on("change", reload);
+  gulp.watch(paths.templates + '/**/*.html').on("change", reload);
 
 });
