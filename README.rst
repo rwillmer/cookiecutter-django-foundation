@@ -14,7 +14,7 @@ Cookiecutter Django
 
 Powered by Cookiecutter_, Cookiecutter Django is a framework for jumpstarting production-ready Django projects quickly.
 
-* Documentation: https://cookiecutter-django.readthedocs.io
+* Documentation: https://cookiecutter-django.readthedocs.io/en/latest/
 * See Troubleshooting_ for common errors and obstacles
 
 .. _cookiecutter: https://github.com/audreyr/cookiecutter
@@ -41,6 +41,7 @@ Features
 * Instructions for deploying to PythonAnywhere_
 * Works with Python 2.7.x or 3.5.x
 * Run tests with unittest or py.test
+* Customizable PostgreSQL version
 
 
 Optional Integrations
@@ -58,15 +59,15 @@ Optional Integrations
 .. _django-environ: https://github.com/joke2k/django-environ
 .. _12-Factor: http://12factor.net/
 .. _django-allauth: https://github.com/pennersr/django-allauth
-.. _django-avatar: https://github.com/jezdez/django-avatar/
+.. _django-avatar: https://github.com/grantmcconnaughey/django-avatar
 .. _Procfile: https://devcenter.heroku.com/articles/procfile
-.. _Mailgun: https://mailgun.com/
+.. _Mailgun: http://www.mailgun.com/
 .. _Whitenoise: https://whitenoise.readthedocs.io/
 .. _Celery: http://www.celeryproject.org/
 .. _Anymail: https://github.com/anymail/django-anymail
 .. _MailHog: https://github.com/mailhog/MailHog
-.. _Sentry: https://getsentry.com
-.. _docker-compose: https://www.github.com/docker/compose
+.. _Sentry: https://getsentry.com/welcome/
+.. _docker-compose: https://github.com/docker/compose
 .. _Opbeat: https://opbeat.com/
 .. _PythonAnywhere: https://www.pythonanywhere.com/
 
@@ -75,7 +76,7 @@ Constraints
 -----------
 
 * Only maintained 3rd party libraries are used.
-* Uses PostgreSQL everywhere (9.0+)
+* Uses PostgreSQL everywhere (9.2+)
 * Environment variables for configuration (This won't work with Apache/mod_wsgi).
 
 
@@ -123,6 +124,12 @@ Answer the prompts with your own desired options_. For example::
     use_python2 [n]: n
     use_docker [y]: n
     use_heroku [n]: y
+    Select postgresql_version:
+    1 - 9.2
+    2 - 9.3
+    3 - 9.4
+    4 - 9.5
+    Choose from 1, 2, 3, 4 [1]: 1
     Select js_task_runner:
     1 - Gulp
     2 - Grunt
@@ -228,9 +235,9 @@ Articles
 
 Have a blog or online publication? Write about your cookiecutter-django tips and tricks, then send us a pull request with the link.
 
-.. _`Development and Deployment of Cookiecutter-Django via Docker`: https://realpython.com/blog/python/development-and-deployment-of-cookiecutter-django-via-docker
+.. _`Development and Deployment of Cookiecutter-Django via Docker`: https://realpython.com/blog/python/development-and-deployment-of-cookiecutter-django-via-docker/
 .. _`Development and Deployment of Cookiecutter-Django on Fedora`: https://realpython.com/blog/python/development-and-deployment-of-cookiecutter-django-on-fedora/
-.. _`How to create a Django Application using Cookiecutter and Django 1.8`: http://blog.swapps.co/how-to-create-a-django-application-using-cookiecutter-and-django-1-8/#.VxKfBpMrKRs
+.. _`How to create a Django Application using Cookiecutter and Django 1.8`: https://www.swapps.io/blog/how-to-create-a-django-application-using-cookiecutter-and-django-1-8/
 .. _`Introduction to Cookiecutter-Django`: http://krzysztofzuraw.com/blog/2016/django-cookiecutter.html
 .. _`Django and GitLab - Running Continuous Integration and tests with your FREE account`: http://dezoito.github.io/2016/05/11/django-gitlab-continuous-integration-phantomjs.html
 
@@ -249,6 +256,6 @@ This project is maintained by volunteers. Support their efforts by spreading the
    :name: Two Scoops Academy
    :align: center
    :alt: Two Scoops Academy
-   :target: http://www.twoscoops.academy/
+   :target: https://twoscoops.academy/
 
 .. _`PyPA Code of Conduct`: https://www.pypa.io/en/latest/code-of-conduct/
