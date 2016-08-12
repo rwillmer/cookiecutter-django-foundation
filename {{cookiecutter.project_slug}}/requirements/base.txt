@@ -12,7 +12,7 @@ django==1.9.8
 # Configuration
 django-environ==0.4.0
 {% if cookiecutter.use_whitenoise == 'y' -%}
-whitenoise==3.2
+whitenoise==3.2.1
 {%- endif %}
 
 
@@ -22,7 +22,7 @@ django-braces==1.9.0
 django-floppyforms==1.6.2
 
 # Models
-django-model-utils==2.5.1
+django-model-utils==2.5.2
 
 # Images
 Pillow==3.3.0
@@ -54,7 +54,7 @@ redis>=2.10.0
 celery==3.1.23
 {% endif %}
 
-django_compressor==2.0
+django_compressor==2.1
 django-libsass==0.7
 
 {% if cookiecutter.js_task_runner == 'Webpack' -%}
