@@ -1,5 +1,5 @@
-Cookiecutter Django
-=======================
+Cookiecutter Django Foundation
+==============================
 
 .. image:: https://pyup.io/repos/github/pydanny/cookiecutter-django/shield.svg
      :target: https://pyup.io/repos/github/pydanny/cookiecutter-django/
@@ -9,10 +9,9 @@ Cookiecutter Django
      :target: https://travis-ci.org/pydanny/cookiecutter-django?branch=master
      :alt: Build Status
 
-.. image:: https://badges.gitter.im/Join Chat.svg
-   :target: https://gitter.im/pydanny/cookiecutter-django?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
 
-Powered by Cookiecutter_, Cookiecutter Django is a framework for jumpstarting production-ready Django projects quickly.
+Cookiecutter Django Foundation is fork of awesome `Cookiecutter Django`_. Powered by Cookiecutter_, Cookiecutter Django 
+is a framework for jumpstarting production-ready Django projects quickly.
 
 * Documentation: https://cookiecutter-django.readthedocs.io/en/latest/
 * See Troubleshooting_ for common errors and obstacles
@@ -22,6 +21,8 @@ Powered by Cookiecutter_, Cookiecutter Django is a framework for jumpstarting pr
 .. _Troubleshooting: https://cookiecutter-django.readthedocs.io/en/latest/troubleshooting.html
 
 .. _528: https://github.com/pydanny/cookiecutter-django/issues/528#issuecomment-212650373
+
+.. _Cookiecutter Django: https://github.com/pydanny/cookiecutter-django
 
 Features
 ---------
