@@ -1,13 +1,13 @@
 Cookiecutter Django Foundation
 ==============================
 
+.. image:: https://travis-ci.org/Parbhat/cookiecutter-django-foundation.svg?branch=master
+     :target: https://travis-ci.org/Parbhat/cookiecutter-django-foundation?branch=master
+     :alt: Build Status
+
 .. image:: https://pyup.io/repos/github/pydanny/cookiecutter-django/shield.svg
      :target: https://pyup.io/repos/github/pydanny/cookiecutter-django/
      :alt: Updates
-
-.. image:: https://travis-ci.org/pydanny/cookiecutter-django.svg?branch=master
-     :target: https://travis-ci.org/pydanny/cookiecutter-django?branch=master
-     :alt: Build Status
 
 Cookiecutter Django Foundation is fork of awesome `Cookiecutter Django`_. Powered by Cookiecutter_, Cookiecutter Django
 is a framework for jumpstarting production-ready Django projects quickly. Cookiecutter Django Foundation uses the `Zurb
@@ -25,7 +25,7 @@ For example, the default colors can be changed by changing the foundation-palett
       alert: #ec5840,
     );
 
-.. image:: http://i.imgur.com/CNsH9yf.png
+.. image:: http://i.imgur.com/Z9Q4W37.png
      :alt: Foundation Django
 
 For more information about `Cookiecutter Django`_
