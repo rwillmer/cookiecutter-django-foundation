@@ -1,4 +1,4 @@
-{% if cookiecutter.use_python2 == 'n' -%}
+{% if cookiecutter.use_python3 == 'y' -%}
 # Wheel 0.25+ needed to install certain packages on CPython 3.5+
 # like Pillow and psycopg2
 # See http://bitly.com/wheel-building-fails-CPython-35
@@ -54,7 +54,8 @@ redis>=2.10.0
 celery==3.1.23
 {% endif %}
 
-django_compressor==2.1
+rcssmin==1.0.6 {% if cookiecutter.windows %}--install-option="--without-c-extensions"{% endif %}
+django-compressor==2.1
 django-libsass==0.7
 
 {% if cookiecutter.js_task_runner == 'Webpack' -%}
