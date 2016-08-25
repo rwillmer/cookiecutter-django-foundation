@@ -129,10 +129,10 @@ Answer the prompts with your own desired options_. For example::
     Receiving objects: 100% (7618/7618), 3.34 MiB | 161.00 KiB/s, done.
     Resolving deltas: 100% (4748/4748), done.
     Checking connectivity... done.
-    project_name [project_name]: Reddit Clone
+    project_name [Project Name]: Reddit Clone
     project_slug [reddit_clone]: reddit
-    author_name [Your Name]: Daniel Roy Greenfeld
-    email [Your email]: pydanny@gmail.com
+    author_name [Daniel Roy Greenfeld]: Daniel Greenfeld
+    email [you@example.com]: pydanny@gmail.com
     description [A short description of the project.]: A reddit clone.
     domain_name [example.com]: myreddit.com
     version [0.1.0]: 0.0.1
