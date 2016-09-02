@@ -236,6 +236,7 @@ else:
 ########## END CELERY
 {% endif %}
 
+{%- if cookiecutter.use_compressor == 'y'-%}
 # django-compressor
 # ------------------------------------------------------------------------------
 INSTALLED_APPS += ("compressor", )
@@ -263,3 +264,4 @@ WEBPACK_LOADER = {
 {% endif %}
 
 # Your common stuff: Below this line define 3rd party library settings
+# ------------------------------------------------------------------------------
