@@ -1,5 +1,5 @@
 {% raw %}{% load staticfiles i18n compress %}
-{% endraw %}{% if cookiecutter.js_task_runner == 'Webpack' -%}{% raw %}{% load render_bundle from webpack_loader %}{% endraw %}{%- endif %}{% raw %}<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -79,11 +79,6 @@
         </div>
     </div>
 
-{% endraw %}{% if cookiecutter.js_task_runner == 'Webpack' %}{% raw %}
-    <div class="row">
-      <div id="main"></div>
-    </div>
-{% endraw %}{% endif %}{% raw %}
     {% block content %}
       <div class="row">
         <div class="medium-12 columns">
@@ -99,12 +94,6 @@
     <!-- Placed at the end of the document so the pages load faster -->
     {% block javascript %}
       <!-- Your stuff: Third-party javascript libraries go here -->
-{% endraw %}{% if cookiecutter.js_task_runner == 'Webpack' %}{% raw %}
-      <!-- Webpack bundles -->
-      {% render_bundle 'vendor' %}
-      {% render_bundle 'common' %}
-      {% render_bundle 'main' %}
-{% endraw %}{% endif %}{% raw %}
       <!-- place project specific Javascript in this file -->
       {% compress js %}
       <script src="{% static 'libs/jquery/dist/jquery.min.js' %}"></script>
