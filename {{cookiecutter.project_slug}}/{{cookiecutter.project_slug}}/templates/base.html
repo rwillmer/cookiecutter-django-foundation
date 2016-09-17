@@ -96,10 +96,10 @@
       <!-- Required by Foundation 6.2.3 -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/what-input/2.0.1/what-input.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.min.js"></script>
 
-      {% compress js %}
-      <script src="{% static 'libs/foundation-sites/dist/foundation.min.js' %}"></script>
       <!-- place project specific Javascript in this file -->
+      {% compress js %}
       <script src="{% static 'js/project.js' %}"></script>
       {% endcompress %}
 
