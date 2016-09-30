@@ -9,7 +9,7 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('sites', '0002_set_site_domain_and_name'),
+        ('sites', '0003_set_site_domain_and_name'),
     ]
 
     operations = [
