@@ -64,6 +64,8 @@ Features
 * Customizable PostgreSQL version
 * Experimental support for Amazon Elastic Beanstalk
 
+.. _`maintained Foundation fork`: https://github.com/Parbhat/cookiecutter-django-foundation
+
 
 Optional Integrations
 ---------------------
