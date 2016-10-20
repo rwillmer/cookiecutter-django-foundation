@@ -64,8 +64,6 @@ Features
 * Customizable PostgreSQL version
 * Experimental support for Amazon Elastic Beanstalk
 
-.. _`maintained Foundation fork`: https://github.com/Parbhat/cookiecutter-django-foundation
-
 
 Optional Integrations
 ---------------------
@@ -126,11 +124,11 @@ You'll be prompted for some values. Provide them, then a Django project will be 
 Answer the prompts with your own desired options_. For example::
 
     Cloning into 'cookiecutter-django-foundation'...
-    remote: Counting objects: 7618, done.
-    remote: Compressing objects: 100% (8/8), done.
-    remote: Total 7618 (delta 1), reused 0 (delta 0), pack-reused 7610
-    Receiving objects: 100% (7618/7618), 3.34 MiB | 161.00 KiB/s, done.
-    Resolving deltas: 100% (4748/4748), done.
+    remote: Counting objects: 8869, done.
+    remote: Compressing objects: 100% (37/37), done.
+    remote: Total 8869 (delta 15), reused 0 (delta 0), pack-reused 8832
+    Receiving objects: 100% (8869/8869), 3.53 MiB | 468.00 KiB/s, done.
+    Resolving deltas: 100% (5591/5591), done.
     Checking connectivity... done.
     project_name [Project Name]: Reddit Clone
     project_slug [reddit_clone]: reddit
@@ -159,9 +157,8 @@ Answer the prompts with your own desired options_. For example::
     Select js_task_runner:
     1 - Gulp
     2 - Grunt
-    3 - Webpack
-    4 - None
-    Choose from 1, 2, 3, 4 [1]: 1
+    3 - None
+    Choose from 1, 2, 3 [1]: 1
     use_lets_encrypt [n]: n
     Select open_source_license:
     1 - MIT
