@@ -41,22 +41,22 @@
       {% with request.resolver_match.url_name as url_name %}
       <div class="top-bar-right">
         <ul class="vertical medium-horizontal menu">
-            <li class="{% if url_name == 'home' %}active{% endif %}"> <a href="{% url 'home' %}">Home</a></li>
-            <li class="{% if url_name == 'about' %}active{% endif %}"><a href="{% url 'about' %}">About</a></li>
-            {% if request.user.is_authenticated %}
-                <li class="{% if url_name == 'detail' %}active{% endif %}">
-                  <a href="{% url 'users:detail' request.user.username  %}">{% trans "My Profile" %}</a>
-                </li>
-                <li class="{% if url_name == 'account_logout' %}active{% endif %}">
-                  <a href="{% url 'account_logout' %}">{% trans "Sign out" %}</a>
-                </li>
-                {% else %}
-                <li class="{% if url_name == 'account_signup' %}active{% endif %}">
-                  <a id="sign-up-link" href="{% url 'account_signup' %}">{% trans "Sign Up" %}</a>
-                </li>
-                <li class="{% if url_name == 'account_login' %}active{% endif %}">
-                  <a id="log-in-link" href="{% url 'account_login' %}">{% trans "Sign In" %}</a>
-                </li>
+          <li> <a href="{% url 'home' %}">Home</a></li>
+          <li><a href="{% url 'about' %}">About</a></li>
+          {% if request.user.is_authenticated %}
+            <li>
+              <a href="{% url 'users:detail' request.user.username  %}">{% trans "My Profile" %}</a>
+            </li>
+            <li>
+              <a href="{% url 'account_logout' %}">{% trans "Sign out" %}</a>
+            </li>
+            {% else %}
+            <li>
+              <a id="sign-up-link" href="{% url 'account_signup' %}">{% trans "Sign Up" %}</a>
+            </li>
+            <li>
+              <a id="log-in-link" href="{% url 'account_login' %}">{% trans "Sign In" %}</a>
+            </li>
             {% endif %}
         </ul>
       </div>
@@ -65,18 +65,18 @@
 
     <div class="row">
 
-        <div class="medium-6 medium-offset-3 columns">
-          {% if messages %}
-              {% for message in messages %}
+      <div class="medium-6 medium-offset-3 columns">
+        {% if messages %}
+          {% for message in messages %}
 
-                  <div class="callout {% if message.tags %}{{ message.tags }}{% endif %}" data-closable>
-                  <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                  {{ message }}</div>
-              {% endfor %}
-          {% endif %}
-        </div>
+            <div class="callout {% if message.tags %}{{ message.tags }}{% endif %}" data-closable>
+            <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+              <span aria-hidden="true">&times;</span>
+            </button>
+            {{ message }}</div>
+          {% endfor %}
+        {% endif %}
+      </div>
     </div>
 
     {% block content %}
@@ -96,7 +96,7 @@
       <!-- Required by Foundation 6.2.3 -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/what-input/2.0.1/what-input.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.4/foundation.min.js"></script>
 
       <!-- place project specific Javascript in this file -->
       {% compress js %}
