@@ -16,11 +16,12 @@
 @include foundation-breadcrumbs;
 @include foundation-button-group;
 @include foundation-callout;
+@include foundation-card;
 @include foundation-close-button;
 @include foundation-drilldown-menu;
 @include foundation-dropdown;
 @include foundation-dropdown-menu;
-@include foundation-flex-video;
+@include foundation-responsive-embed;
 @include foundation-label;
 @include foundation-media-object;
 @include foundation-menu;
@@ -43,26 +44,27 @@
 
 /********* Project Scss **************/
 
-.top-bar  {
-    li.menu-text{color: $white;}
-    a {color: $white;}
-    a:hover {color: $white;}
-    li a:hover{background-color: map-get($foundation-palette, primary);}
+.top-bar
+{
+  li.menu-text{color: $white;}
+  a {color: $white;}
+  a:hover {color: $white;}
+  li a:hover{background-color: get-color(secondary);}
 }
 
 /******** Colouring for messages from Django messages framework **********/
 
 .callout.error
 {
-    background-color: #fce6e2;
+  background-color: #fce6e2;
 }
 
 .callout.info
 {
-    background-color: #ebebeb;
+  background-color: #ebebeb;
 }
 
 .callout.debug
 {
-    background-color: #d6e9c6;;
+  background-color: #d6e9c6;;
 }

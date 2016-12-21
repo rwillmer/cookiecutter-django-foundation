@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    
+
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -95,8 +95,8 @@
     {% block javascript %}
       <!-- Required by Foundation 6.2.3 -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/what-input/2.0.1/what-input.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.4/foundation.min.js"></script>
+      <script src="{% static 'libs/what-input/what-input.min.js' %}"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.0/js/foundation.min.js"></script>
 
       <!-- place project specific Javascript in this file -->
       {% compress js %}
@@ -104,11 +104,10 @@
       {% endcompress %}
 
       <!-- Your stuff: Third-party javascript libraries go here -->
-      
+
       <script>
         $(document).foundation();
       </script>
     {% endblock javascript %}
   </body>
-</html>
- {% endraw %}
+</html>{% endraw %}
