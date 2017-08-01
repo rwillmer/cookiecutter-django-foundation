@@ -7,7 +7,7 @@ The steps below will get you up and running with a local development environment
 
 * pip
 * virtualenv
-* PostgreSQL
+* PostgreSQL or MySQL
 
 First make sure to create and activate a virtualenv_.
 
@@ -17,9 +17,15 @@ Then install the requirements for your local development::
 
     $ pip install -r requirements/local.txt
 
-Then, create a PostgreSQL database with the following command, where `[project_slug]` is what value you entered for your project's `project_slug`::
+Then, create a database with the following command, where `[project_slug]` is what value you entered for your project's `project_slug`.
+
+For PostgreSQL::
 
     $ createdb [project_slug]
+
+For MySQL::
+
+    $ mysqladmin create [project_slug]
 
 You can now run the usual Django ``migrate`` and ``runserver`` commands::
 
@@ -42,6 +48,9 @@ Rename env.example to .env to begin updating the file with your own environment 
 .. parsed-literal::
 
     DATABASE_URL="postgres://*<pg_user_name>*:*<pg_user_password>*\ @127.0.0.1:\ *<pg_port>*/*<pg_database_name>*"
+
+    DATABASE_URL="mysql://*<my_user_name>*:*<my_user_password>*\ @127.0.0.1:\ *<my_port>*/*<my_database_name>*"
+
 
 .. _django-environ: http://django-environ.readthedocs.io
 
